@@ -52,10 +52,10 @@ li {
 
 .logo__title::before {
   content: '*';
-	position: absolute;
-	top: 0;
-	right: -12px;
-	color: #f06c64;
+  position: absolute;
+  top: 0;
+  right: -12px;
+  color: #f06c64;
 }
 
 .navigation {
@@ -78,31 +78,119 @@ li {
 
 .navigation__item:nth-child(n+2)::before {
   content: "";
-	position: absolute;
-	margin-left: -16px;
-	width: 2px;
-	height: 2px;
-	border-radius: 50%;
-	background-color: #fff;
+  position: absolute;
+  margin-left: -16px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #fff;
 }
 
 .navigation__link:hover {
-	color: #f06c64;
+  color: #f06c64;
 }
 
-/* slider 
+/* slider */
 
 .slider {
   min-height: 666px;
   background-color: #f06c64;
-}*/
+  min-height: 601px;
+  border-bottom: 5px solid #EA676B;
+}
+
+.slider .wrapper {
+  position: relative;
+  min-height: inherit;
+}
+
+.slider__images {
+  position: relative;
+}
+
+.slider__image {
+  position: absolute;
+}
+
+.slider__image-phone {
+  z-index: 5;
+}
+
+.slider__image-phone--vertical {
+  top: 50px;
+  left: 110px;
+}
+
+.slider__image-phone--horizontal {
+  top: 174px;
+  right: 72px;
+}
+
+.slider__phone-shadow--vertical {
+  top: 51px;
+  left: 110px;
+}
+
+.slider__phone-shadow--horizontal {
+  top: 174px;
+  right: 47px;
+}
+
+.phone__background {
+  position: absolute;
+  z-index: 15;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.phone__background--vertical{
+  background-image: url('./assets/img/picture-vertical.png');
+  top: 116px;
+  left: 124px;
+  width: 188px;
+  height: 332px;
+}
+
+.phone__background--horizontal {
+  background-image: url('./assets/img/picture-horizontal.png');
+  top: 188px;
+  right: 137px;
+  width: 333px;
+  height: 189px;
+}
+
+.arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  padding: 0;
+}
+
+.arrows__icon {
+  cursor: pointer;
+  min-width: 30px;
+  min-height: 30px; 
+}
+
+.arrows__icon--left {
+  background: url('./assets/img/arrow-left.png') no-repeat;
+}
+
+.arrows__icon--right {
+  background: url('./assets/img/arrow-right.png') no-repeat;
+}
+
 
 /*services*/
 
 .services {
-  min-height: 505px;
+  min-height: 497px;
   background-color: #F2F2F2;
   color: #767e9e;
+  border-bottom: 5px solid #fff;
 }
 
 .services__title {
