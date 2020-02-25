@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 1020px;
+  margin: 0 auto;
+  padding: 0; 
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/*Portfolio*/
+
+.portfolio {
+  height: 871px;
+  background-color: #2D303A;
+  border-bottom: 7px solid #323746;
+}
+
+
+.layout-4-columns {
+  background-color: lawngreen;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.picture__image {
+  height: 187px;
+  width: 220px;
+}
+
+.picture__item {
+  height: 187px;
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.picture__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+
+
+
+
+
