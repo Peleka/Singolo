@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -10,7 +11,7 @@ body {
   width: 1020px;
   margin: 0 auto;
   padding: 0; 
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 1.8rem;
 }
 
@@ -35,8 +36,7 @@ li {
   color: #666d89;
   font-weight: 900;
   text-align: left;
-  padding-top: 65px;
-  padding-bottom: 30px;
+  padding-top: 70px;
 }
 
 .text__style {
@@ -45,24 +45,26 @@ li {
   color: #767e9e;
   font-weight: 300;
   text-align: left;
-  margin-bottom:52px ;
+  margin-top: 27px;
+  margin-bottom: 10px ;
 }
 
 .portfolio {
-  height: 871px;
+  height: 864px;
   background-color: #2D303A;
-  border-bottom: 7px solid #323746;
+  border-bottom: 6px solid #323746;
 }
 
 .portfolio__buttons {
-  margin-bottom: 20px;
+  display: flex;
+  height: 22px;
 }
 
 .portfolio__button {
   margin-right: 10px;
   padding: 0 6px;
+  font-family: Lato, sans-serif;
   font-size: 1.2rem;
-  line-height: 2.156rem;
   font-weight: 400;
   color: #767e9e;
   background-color: inherit;
@@ -73,6 +75,7 @@ li {
 }
 
 .portfolio__button--activ {
+  letter-spacing: 0.04rem;
   border: 1px solid #dedede;
   color: #dedede;
 }
@@ -83,22 +86,27 @@ li {
 }
 
 .layout-4-columns {
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
-  padding: 0;
+  margin-top: 19px;
 }
 
-.picture__image {
-  height: 187px;
-  width: 220px;
+.pictures__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 610px;
+  overflow: hidden;
 }
 
 .picture__item {
-  height: 187px;
   width: 220px;
+  height: 187px;
   margin-bottom: 20px;
   margin-right: 20px;
+}
+
+.picture__image {
+  width: 220px;
+  height: 187px;
+  object-fit: none;
 }
 
 .picture__item:nth-child(4n) {
@@ -108,9 +116,9 @@ li {
 /*About Us*/
 
 .about-us {
-  min-height: 729px;
+  min-height: 728px;
   background-color: #F2F2F2;
-  border-bottom: 7px solid #fff;
+  border-bottom: 6px solid #fff;
 }
 
 .wrapper-flex {
@@ -118,15 +126,20 @@ li {
   justify-content: space-between;
 }
 
-.about-us__image {
-  max-width: 100%;
-  height: auto;
+.text__style--about-us {
+  margin-bottom: 46px;
+  margin-top: 25px;
 }
 
 .photo__wrap {
-  width: 300px;
-  height: 300px;
-  margin-bottom: 20px;
+  max-width: 300px;
+  max-height: 299px;
+  margin-bottom: 17px;
+  overflow: hidden;
+}
+
+.photo__wrap--pixel {
+  margin-right: 2px;
 }
 
 .photo__caption {
@@ -138,8 +151,6 @@ li {
   font-size: 1.8rem;
   font-weight: 900;
   line-height: 1.8rem;
-  text-align: left;
-  padding-bottom: 15px;
 }
 
 .photo__text {
@@ -148,7 +159,8 @@ li {
   line-height: 2.2rem;
   color: #767e9e;
   font-weight: 400;
-  padding-bottom: 28px;
+  margin-bottom: 21px;
+  margin-top: 10px;
 }
 
 .social-icon__list {
