@@ -11,7 +11,7 @@ body {
   width: 1020px;
   margin: 0 auto;
   padding: 0; 
-  font-family: Lato, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
   font-size: 1.8rem;
 }
 
@@ -126,25 +126,27 @@ li {
   justify-content: space-between;
 }
 
+.title__style--about-us{
+  line-height: 1.5rem;
+}
+
 .text__style--about-us {
-  margin-bottom: 46px;
-  margin-top: 25px;
+  margin-bottom: 45px;
+  margin-top: 28px;
 }
 
 .photo__wrap {
   max-width: 300px;
   max-height: 299px;
-  margin-bottom: 17px;
-  overflow: hidden;
+  margin-bottom: 18px;
 }
 
-.photo__wrap--pixel {
-  margin-right: 2px;
+.photo--pixel {
+  margin-right: -2px;
 }
 
 .photo__caption {
   color: #666d89;
-  text-align: left;
 }
 
 .photo__name {
@@ -172,7 +174,3 @@ li {
 .social-icon__item {
   padding-right: 8px;
 }
-
-
-
-
