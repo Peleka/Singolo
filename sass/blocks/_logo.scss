@@ -1,0 +1,16 @@
+.logo__title {
+  position: relative;
+  font-size: 2.4rem;
+  line-height: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+
+  &::before {
+    content: '*';
+    position: absolute;
+    top: 0;
+    right: -9px;
+    color: $pink-background;
+  }
+}

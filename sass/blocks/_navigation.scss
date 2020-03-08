@@ -1,0 +1,36 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 371px;
+  margin-top: 11px;
+  text-transform: uppercase;
+
+  &__link {
+    text-transform: uppercase;
+    color: #fff;
+
+    &--active {
+      color: $pink-background;
+    }
+  }
+
+  &__item {
+    font-size: 1.2rem;
+    line-height: 0.6rem;
+    font-weight: 700;
+
+    &:nth-child(n+2)::before {
+      content: "";
+      position: absolute;
+      margin-left: -16px;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+
+    &:hover {
+      color: $pink-background;
+    }
+  }
+}

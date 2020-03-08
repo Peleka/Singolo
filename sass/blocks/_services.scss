@@ -1,0 +1,83 @@
+.services {
+  min-height: 494px;
+  background-color: #F2F2F2;
+  color: $text-color;
+  border-bottom: 6px solid #fff;
+
+  &__title {
+    display: inline-block;
+    padding-top: 59px;
+    padding-bottom: 19px;
+    font-size: 3rem;  
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.01rem;
+  }
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  
+  padding: 0;
+
+  &__item {
+    position: relative;
+    max-width: 220px;
+    margin-left: 80px;
+    margin-bottom: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -80px;
+      width: 60px;
+      height: 60px;
+      background-repeat: no-repeat;
+    }
+
+    &--pen::before {
+      background-image: url('./assets/img/ellipse_pen.svg');
+    }
+
+    &--bulb::before {
+      background-image: url('./assets/img/ellipse-bulb.svg');
+    }
+
+    &--heart::before {
+      background-image: url('./assets/img/ellipse-heart.svg');
+    }
+
+    &--phone::before {
+      background-image: url('./assets/img/ellipse-phone.svg');
+    }
+
+    &--bubble::before {
+      background-image: url('./assets/img/ellipse-bubble.svg');
+    }
+
+    &--star::before {
+      background-image: url('./assets/img/ellipse-star.svg');
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    letter-spacing: -0.13rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: -0.03rem;
+    word-spacing: 3px;
+  }
+}

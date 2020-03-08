@@ -1,0 +1,71 @@
+.quote {
+  height: 648px;
+  background-color: $pink-background;
+  border-bottom: 6px solid #EA676B;
+  color: $quote-text-color;
+
+  &__title {
+    padding-top: 68px;
+    font-size: 3rem;
+    line-height: 1.8rem;
+    font-weight: 900;  
+    letter-spacing: -.1px;
+  }
+
+  &__text {
+    margin-top: 28px;
+    margin-bottom: 45px;
+    line-height: 2.9rem;
+    font-weight: 300;
+    text-align: justify;  
+    letter-spacing: -.21px;
+  }
+}
+
+.form-quote {
+  width: 619px;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    color: $quote-main-color;
+    margin-bottom: 16px;
+    background-color: #d6564f;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &[placeholder] {
+      font-family: 'Lato';
+      padding: 8px 15px 8px 15px;
+      font-size: 1.2rem;
+      line-height: 2.2rem;
+      font-weight: 400;
+    }
+
+    &::placeholder {
+      color: $quote-main-color;
+    }
+  }
+
+  &__textarea {
+    height: 186px;
+    resize: none;
+  }
+
+  &__button {
+    padding: 10px 15px;
+    width: max-content;
+    color: $quote-text-color;
+    cursor: pointer;
+
+    &:hover {
+      color: $text-color;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.header { 
+  min-height: 89px;
+  background-color: $main-background;
+  border-bottom: 6px solid #323746;
+
+  & .wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: inherit;
+    align-items: center;
+  }
+}
