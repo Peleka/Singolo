@@ -37,8 +37,9 @@
 .pictures__list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 18px;
   max-height: 610px;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .picture{
@@ -48,6 +49,7 @@
     height: 187px;
     margin-bottom: 20px;
     margin-right: 20px;
+    box-sizing: border-box;
 
     &:nth-child(4n) {
       margin-right: 0;
@@ -58,5 +60,10 @@
     width: 220px;
     height: 187px;
     object-fit: none;
+    box-sizing: border-box;
+
+    &--border {
+      border: 5px solid #F06C64;
+    }
   }
 }
