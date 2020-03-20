@@ -163,6 +163,8 @@ li {
 }
 .slider__images {
   position: relative;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 .slider__image {
   position: absolute;
@@ -237,6 +239,14 @@ li {
   background: url("./assets/img/arrow-right.png") no-repeat;
 }
 
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .services {
   min-height: 494px;
   background-color: #F2F2F2;
