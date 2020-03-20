@@ -41,7 +41,7 @@ const portfolioButtons = document.querySelectorAll('.portfolio__button');
 
 const activeButton = (event) => {
   portfolioButtons.forEach(btn => btn.classList.remove('portfolio__button--activ'))
-  event.target.closest('.portfolio__button').classList.add('portfolio__button--activ')
+  event.target.classList.add('portfolio__button--activ')
 }
 
 document.querySelector('.portfolio__buttons').addEventListener('click', activeButton)
@@ -84,12 +84,18 @@ for (let filterButton of FILTER__BUTTONS) {
 const portfolioImages = document.querySelectorAll('.picture__image')
 
 const borderImage = (event) => {
-    portfolioImages.forEach(image => image.classList.remove('picture__image--border'))
-    event.target.closest('.picture__image').classList.add('picture__image--border')
+    const imageLinks = document.querySelectorAll('.picture__image')
+
+    imageLinks.forEach(item => {
+        item.classList.remove('picture__image--border')
+    })
+
+    event.target.classList.add('picture__image--border')
 }
 
-document.querySelector('.pictures__list').addEventListener('click', borderImage)
-
+for (let item of portfolioImages) {
+    item.addEventListener('click', borderImage)
+}
 
 
 // Слайдер
@@ -165,6 +171,9 @@ const showModal = () => {
 
       document.querySelector('.modal').classList.remove('hidden')
   }
+
+   // Сброс данных формы
+   document.querySelector('.form-quote').reset()
 }
 
 const closeModal = () => {
