@@ -31,9 +31,7 @@ li {
 .wrapper {
   max-width: 940px;
   margin: 0 auto;
-
-  border: 1px solid blue;
-
+  
   @media (max-width: 1019px){
     max-width: calc(100% - 80px);
   }
