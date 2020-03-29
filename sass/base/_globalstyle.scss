@@ -9,7 +9,7 @@ html {
 
 body {
   position: relative;
-  width: 1020px;
+  width: 100%;
   margin: 0 auto;
   padding: 0; 
   font-family: 'Lato', Arial, sans-serif;
@@ -29,8 +29,26 @@ li {
 }
 
 .wrapper {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
+
+  border: 1px solid blue;
+
+  @media (max-width: 1019px){
+    max-width: calc(100% - 80px);
+  }
+
+  /*&__slider {
+    @media (max-width: 1019px) {
+      max-width: 711px;
+    }
+  }*/
+
+  /*&__portfolio {
+    @media (max-width: 767px) {
+      min-height: 844px;
+    }
+  }*/
 }
 
 .title__style {
