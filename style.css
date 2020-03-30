@@ -31,7 +31,6 @@ li {
 .wrapper {
   max-width: 940px;
   margin: 0 auto;
-  border: 1px solid blue;
   /*&__slider {
     @media (max-width: 1019px) {
       max-width: 711px;
