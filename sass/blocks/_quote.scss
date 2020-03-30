@@ -4,12 +4,24 @@
   border-bottom: 6px solid #EA676B;
   color: $quote-text-color;
 
+  @media (max-width: 1019px) {
+    min-height: 625px;
+  }
+
+  @media (max-width: 767px) {
+    min-height: 969px;
+  }
+
   &__title {
     padding-top: 68px;
     font-size: 3rem;
     line-height: 1.8rem;
     font-weight: 900;  
     letter-spacing: -.1px;
+
+    @media (max-width: 767px) {
+      padding-top: calc(119.68 / 1020 * 100vw);
+    }
   }
 
   &__text {
@@ -19,13 +31,25 @@
     font-weight: 300;
     text-align: justify;  
     letter-spacing: -.21px;
+
+    @media (max-width: 1019px) {
+      margin-bottom: 19px;
+    }
+
+    @media (max-width: 767px) {
+      margin-top: calc(38.08 / 1020 * 100vw);
+    }
   }
 }
 
 .form-quote {
-  width: 619px;
+  width: calc(619 / 940 * 100%);
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 
   &__item {
     color: $quote-main-color;
@@ -42,7 +66,7 @@
 
     &[placeholder] {
       font-family: 'Lato';
-      padding: 8px 15px 8px 15px;
+      padding: 13px 15px 11px 15px;
       font-size: 1.2rem;
       line-height: 2.2rem;
       font-weight: 400;
@@ -56,6 +80,10 @@
   &__textarea {
     height: 186px;
     resize: none;
+
+    @media (max-width: 1019px) {
+      height: calc(202 / 1020 * 100vw)
+    }
   }
 
   &__button {

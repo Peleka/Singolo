@@ -81,6 +81,10 @@ li {
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+
   &--footer{
     padding-top: 21px;
   }
@@ -92,6 +96,13 @@ li {
     display: flex;
     justify-content: start;
     padding: 0;
+
+    &--footer {
+      @media screen {
+        width: 100%;
+        justify-content: center;
+      }
+    }
   }
 
   &__item {

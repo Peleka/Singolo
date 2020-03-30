@@ -1,9 +1,14 @@
 .information {
-  width: 300px;
+  width: calc(300 / 940 * 100%);
   font-size: 1.2rem;
   line-height: 2.2rem;
   font-weight: 400;
   color: $quote-text-color;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-top: calc(87.04 / 1020 * 100vw);
+  }
 
   &__title {
     font-size: 1.8rem;

@@ -9,4 +9,8 @@
   line-height: 2.156rem;
   font-weight: 400;
   color: $text-color;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
