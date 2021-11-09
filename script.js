@@ -3,9 +3,8 @@
 const navigation = document.querySelectorAll('.navigation__link');
 
 const activeLink = (event) => {
-  
-  navigation.forEach(link => link.classList.remove('navigation__link--active'))
-  event.target.closest('.navigation__link').classList.add('navigation__link--active')
+    navigation.forEach(link => link.classList.remove('navigation__link--active'))
+    event.target.closest('.navigation__link').classList.add('navigation__link--active')
 }
 
 document.querySelector('.navigation').addEventListener('click', activeLink)
@@ -13,12 +12,11 @@ document.querySelector('.navigation').addEventListener('click', activeLink)
 
 // Изменение вида HEADER при scroll
 const scrollPage = () => {
-
-  if (window.pageYOffset >= 50) {
-      document.querySelector('.header').classList.add('header--scroll')
-  } else {
-      document.querySelector('.header').classList.remove('header--scroll')
-  }
+    if (window.pageYOffset >= 50) {
+        document.querySelector('.header').classList.add('header--scroll')
+    } else {
+        document.querySelector('.header').classList.remove('header--scroll')
+    }
 }
 
 window.addEventListener('scroll', scrollPage)
@@ -30,7 +28,7 @@ const phoneVertical = document.querySelector('.slider__image-phone--vertical')
 const phoneHorizontal = document.querySelector('.slider__image-phone--horizontal')
 const phoneImageVertical = document.querySelector('.phone__background--vertical')
 const phoneImageHorizontal = document.querySelector('.phone__background--horizontal')
-    
+
 phoneVertical.addEventListener('click', () => phoneImageVertical.classList.toggle('phone__background--hidden'))
 phoneHorizontal.addEventListener('click', () => phoneImageHorizontal.classList.toggle('phone__background--hidden'))
 
@@ -40,8 +38,8 @@ phoneHorizontal.addEventListener('click', () => phoneImageHorizontal.classList.t
 const portfolioButtons = document.querySelectorAll('.portfolio__button');
 
 const activeButton = (event) => {
-  portfolioButtons.forEach(btn => btn.classList.remove('portfolio__button--activ'))
-  event.target.classList.add('portfolio__button--activ')
+    portfolioButtons.forEach(btn => btn.classList.remove('portfolio__button--activ'))
+    event.target.classList.add('portfolio__button--activ')
 }
 
 document.querySelector('.portfolio__buttons').addEventListener('click', activeButton)
@@ -66,9 +64,9 @@ const shufflePortfolio = () => {
         portfolio[j] = portfolio[i]
         portfolio[i] = temp
     }
-  
+
     for (let item of portfolio) {
-    shuffledPortfolioItems.append(item)
+        shuffledPortfolioItems.append(item)
     }
 
     portfolioItems.replaceWith(shuffledPortfolioItems)
@@ -84,9 +82,7 @@ for (let filterButton of FILTER__BUTTONS) {
 const portfolioImages = document.querySelectorAll('.picture__image')
 
 const borderImage = (event) => {
-    const imageLinks = document.querySelectorAll('.picture__image')
-
-    imageLinks.forEach(item => {
+    portfolioImages.forEach(item => {
         item.classList.remove('picture__image--border')
     })
 
@@ -125,7 +121,7 @@ function showSlides(n) {
     let slides = document.querySelectorAll('.slider__images')
 
     if (n > slides.length) {
-      slideIndex = 1
+        slideIndex = 1
     }
     if (n < 1) {
         slideIndex = slides.length
@@ -151,33 +147,33 @@ document.querySelectorAll('.arrows').forEach(item => item.addEventListener('clic
 //Get a quote  Отправка формы
 
 const showModal = () => {
-  if (document.getElementById('name').value !== '' && document.getElementById('email').value !== '') {
-      event.preventDefault()
+    if (document.getElementById('name').value !== '' && document.getElementById('email').value !== '') {
+        event.preventDefault()
 
-      const subject = document.getElementById('subject').value.toString()
-      const description = document.getElementById('description').value.toString()
+        const subject = document.getElementById('subject').value.toString()
+        const description = document.getElementById('description').value.toString()
 
-      if (subject !== '') {
-          document.getElementById('modal-theme').innerText = 'Тема: ' + subject
-      } else {
-          document.getElementById('modal-theme').innerText = 'Без темы'
-      }
+        if (subject !== '') {
+            document.getElementById('modal-theme').innerText = 'Тема: ' + subject
+        } else {
+            document.getElementById('modal-theme').innerText = 'Без темы'
+        }
 
-      if (description !== '') {
-          document.getElementById('modal-text').innerText = 'Описание: ' + description
-      } else {
-          document.getElementById('modal-text').innerText = 'Без описания'
-      }
+        if (description !== '') {
+            document.getElementById('modal-text').innerText = 'Описание: ' + description
+        } else {
+            document.getElementById('modal-text').innerText = 'Без описания'
+        }
 
-      document.querySelector('.modal').classList.remove('hidden')
-  }
+        document.querySelector('.modal').classList.remove('hidden')
+    }
 
-   // Сброс данных формы
-   document.querySelector('.form-quote').reset()
+    // Сброс данных формы
+    document.querySelector('.form-quote').reset()
 }
 
 const closeModal = () => {
-  document.querySelector('.modal').classList.add('hidden')
+    document.querySelector('.modal').classList.add('hidden')
 }
 
 
